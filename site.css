@@ -1,0 +1,134 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.noire {
+    /*    background-color: dimgrey;*/
+    color: #056a65;
+    font-size: 12px;
+    margin: 5px; /* Add spacing between buttons */
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove button borders */
+    border-radius: 0; /* Remove button border radius */
+    color: #056a65; /* Set text color to #0abab5 */
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.celesteblue {
+    background-color: #B2EBF2;
+    padding-bottom: 100px;
+}
+
+.search-box {
+    background-color: #4ba3d9; /* Celesteblue background color */
+    border-radius: 20px; /* Rounded borders */
+    padding: 5px 10px; /* Add padding for space inside the box */
+    position: absolute; /* Set the position to absolute */
+    top: 105px; /* Align with the top of the container */
+    right: 120px; /* Move the box to the right */
+}
+
+
+.celesteblue.custom-width {
+    background-color: white;
+    width: 100%; /* or you can specify a fixed width like 300px */
+}
+.custom-carousel {
+    width: 57%; /* Set the width to 2/5 of the parent container */
+    margin-left: 20px;   
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-inner {
+    height: 390px; /* Set a new desired height */
+}
+
+.carousel-item img {
+    height: 390px; /* Set the height to match .carousel-inner */
+    width: auto; /* Keep the aspect ratio */
+    max-width: 100%; /* Ensure it does not exceed the container width */
+    object-fit: cover; /* This prevents stretching */
+}
+
+
+
+
+.text-blue {
+    background-color: #B2EBF2;
+}
+
+
+.separator {
+    font-size: 135%; /* Adjust the font size to make separators slightly bigger */
+    margin: 0 10px; /* Adjust spacing around the separator */
+    width: 0px;
+}
+
+.separator2 {
+    font-size: 685%; /* Adjust the font size to make separators slightly bigger */
+    margin: 0 10px; /* Adjust spacing around the separator */
+    width: 0px;
+    
+}
+
+.btn-group .btn {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove button borders */
+    border-radius: 0; /* Remove button border radius */
+    color: #056a65; /* Set text color to #0abab5 */
+    font-size: 14px;
+}
+.btn-group .btn {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.msx{
+    margin-left: 300px;
+}
+
+.hits {
+    background-color: #83EDE3; /* Remove background color */
+    border: none; /* Remove button borders */
+    border-radius: 0; /* Remove button border radius */
+    color: #056a65; /* Set text color to #0abab5 */
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    z-index: 10;
+    margin-left: 40px;
+    width: 85%;
+}
+
+.poster {
+    width: 140px; /* 1/4 of the original 300px */
+    height: 165px; /* 1/4 of the original 400px */
+    border: 2px solid black;
+    margin-left: 60px;
+}
+
+.quickview {
+    margin-left: 80px;
+}

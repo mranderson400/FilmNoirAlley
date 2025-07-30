@@ -1,0 +1,176 @@
+@model Product
+
+<div>
+    <!-- Additional Anchor Tags -->
+
+    <nav class="celesteblue">
+        <h1>The HollyWood Era Guide</h1>
+        <nav class="mb-1">
+            <img src="~images/hat.jpg" alt="popcorn">
+
+
+            <div class="ml-4">
+                <div class="btn-group mt-3  msx" role="group" aria-label="Button group without borders">
+                    <a href="#" class="btn btn-secondary">Whats Playing</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="btn btn-secondary">Make A Review</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="btn btn-secondary">SHOP Posters</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="btn btn-secondary">Top 10</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="btn btn-secondary">Watch List</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="btn btn-secondary">Month Highlights</a>
+                    <span class="separator2">|</span>
+                    <!-- Add more anchor tags and separators as needed -->
+                </div>
+            </div>
+
+
+
+        </nav>
+
+
+
+        <div class="d-flex justify-content-end margin">
+            <div>
+                <label for="dropdownBox" class="form-label"></label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle text-blue" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Favorites</a>
+                        <a class="dropdown-item" href="#">Default Name 2</a>
+                        <a class="dropdown-item" href="#">Default Name 3</a>
+                        <a class="dropdown-item" href="#">Default Name 4</a>
+                        <a class="dropdown-item" href="#">Default Name 5</a>
+                        <!-- Add more items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="search-box">
+                    <form id="movieSearchForm" onsubmit="getMovie(event)">
+                        <input id="searchBox" class="form-control form-control-sm custom-width" type="text" name="movieName" placeholder="Search Movie">
+                        <button type="submit">Fetch!</button>
+                    </form>
+                </div>
+            </div>
+            <div id="movieResult"></div> <!-- Result will be displayed here -->
+        </div>
+
+    </nav>
+
+
+    <!-- Search Box and Dropdown -->
+    @*nav2*@
+    <nav class="noire">
+        <div>
+            <a href="#" class="btn btn-secondary noire"> Search by Actors</a>
+            <a href="#" class="btn btn-secondary noire"> Search byDirectors</a>
+            <a href="#" class="btn btn-secondary noire">Recent Reviews</a>
+            <a href="#" class="btn btn-secondary noire">Shop Posters</a>
+            <a href="#" class="btn btn-secondary noire">Default Name 12</a>
+            <a href="#" class="btn btn-secondary noire">Default Name 12</a>
+            <a href="#" class="btn btn-secondary noire">Default Name 12</a>
+            <!-- Add more anchor tags as needed -->
+        </div>
+    </nav>
+    @*end of nav2*@
+
+
+    @*Carousel*@
+    <div id="noireslideshow" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/popcorn.png" class="d-block w-100" alt="Hat Image">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/background.jpg" class="d-block w-100" alt="Background Image">
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#noireslideshow" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#noireslideshow" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    @*Carousel*@
+
+
+
+    @*1930s HITS*@
+    <p class="hits mt-4">Greatest Hits 1930s</p>
+    <div>
+        <div id="posterContainer" class="poster">
+
+        </div>
+        <div class="quickview">
+            <p>QUICK VIEW</p>
+        </div>
+
+    </div>
+    @*1930s HITS*@
+
+
+
+    @*1940s HITS*@
+    <p class="hits mt-4">Greatest Hits 1940s</p>
+    <div>
+        <div class="poster">
+
+        </div>
+        <div class="quickview">
+            <p>QUICK VIEW</p>
+        </div>
+
+    </div>
+    @*1940s HITS*@
+
+
+
+    @*1950s HITS*@
+    <p class="hits mt-4">Greatest Hits 1950s</p>
+    <div>
+        <div class="poster">
+
+        </div>
+        <div class="quickview">
+            <p>QUICK VIEW</p>
+        </div>
+
+    </div>
+    @*1950s HITS*@
+
+
+    @*1960s HITS*@
+    <p class="hits mt-4">Greatest Hits 1960s</p>
+    <div>
+        <div class="poster">
+
+        </div>
+        <div class="quickview">
+            <p>QUICK VIEW</p>
+        </div>
+
+    </div>
+    @*1960s HITS*@
+
+
+
+
+
+</div>
+@*<a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="CategoryNew">Categories</a>*@
+
